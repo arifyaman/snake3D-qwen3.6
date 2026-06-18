@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Snake Game - Three.js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <div id="mode-badge" class="auto">AUTO-PLAY ACTIVE</div>
+            <div id="score">0</div>
+            <div id="instructions">Press any arrow key to take control • Press SPACE to toggle auto-play</div>
+        </div>
+
+        <div id="game-over">
+            <h1>GAME OVER</h1>
+            <div class="final-score">Score: <span id="final-score-value">0</span></div>
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+
+    <!-- Three.js via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="config.js"></script>
+    <script src="renderer.js"></script>
+    <script src="gameLogic.js"></script>
+    <script src="ai.js"></script>
+    <script src="input.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

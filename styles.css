@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #0a0a0a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* UI Overlay */
+#ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#mode-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+#mode-badge.auto {
+    background: rgba(0, 200, 80, 0.85);
+    box-shadow: 0 0 10px rgba(0, 200, 80, 0.5);
+}
+
+#mode-badge.manual {
+    background: rgba(255, 165, 0, 0.85);
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
+#score {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#instructions {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 24px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+/* Game Over Screen */
+#game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    pointer-events: all;
+}
+
+#game-over.show {
+    display: flex;
+}
+
+#game-over h1 {
+    font-size: 64px;
+    color: #ff4444;
+    text-shadow: 0 0 20px rgba(255, 68, 68, 0.7);
+    margin-bottom: 20px;
+}
+
+#game-over .final-score {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#restart-btn {
+    padding: 14px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #00c850, #009624);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 15px rgba(0, 200, 80, 0.4);
+}
+
+#restart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 200, 80, 0.7);
+}
