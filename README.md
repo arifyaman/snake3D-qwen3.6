@@ -2,6 +2,7 @@
 
 A neon-drenched, auto-playing 3D Snake game built with **Three.js**. Watch the AI dominate, then take control and see how far you can go.
 
+![GitHub Pages](https://img.shields.io/badge/🌐-Live%20Demo-blue?style=flat-square&link=https://arifyaman.github.io/snake3D-qwen3.6)
 ![Three.js](https://img.shields.io/badge/Three.js-R128-darkgreen?style=flat-square&logo=three.js)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
